@@ -27,15 +27,15 @@ class Minesweeper:
 
         # import images
         self.images = {
-            "plain": PhotoImage(file = "images/tile_plain.gif"),
-            "clicked": PhotoImage(file = "images/tile_clicked.gif"),
-            "mine": PhotoImage(file = "images/tile_mine.gif"),
-            "flag": PhotoImage(file = "images/tile_flag.gif"),
-            "wrong": PhotoImage(file = "images/tile_wrong.gif"),
+            "plain": PhotoImage(file = "tile_plain.gif"),
+            "clicked": PhotoImage(file = "tile_clicked.gif"),
+            "mine": PhotoImage(file = "tile_mine.gif"),
+            "flag": PhotoImage(file = "tile_flag.gif"),
+            "wrong": PhotoImage(file = "tile_wrong.gif"),
             "numbers": []
         }
         for i in range(1, 9):
-            self.images["numbers"].append(PhotoImage(file = "images/tile_"+str(i)+".gif"))
+            self.images["numbers"].append(PhotoImage(file = "tile_"+str(i)+".gif"))
 
         # set up frame
         self.tk = tk
